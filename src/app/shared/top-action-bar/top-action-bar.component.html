@@ -1,0 +1,20 @@
+<div class="top-action-bar dflex align-center">
+    <div class="close-btn">
+      <div class="icon"><img src="assets/Images/icons8-close.svg" alt=""></div>
+    </div>
+    <div class="store-address" (click)="_service.popup = true">
+      <div><a>{{store_name}}</a></div>
+    </div>
+</div>
+
+<div class="init-page-block margin-auto relative overflow-hidden" *ngIf="_service.popup">
+    <div class="box-wrap clearfix">
+      <div class="deliver fl w50 page"><h2>Deliver</h2></div>
+      <div class="takeoff fl w50 page active"><h2>To take off</h2></div>
+    </div>
+    <div class="box-wrap-block">
+      <div></div>
+    </div>
+</div>
+
+

@@ -1,0 +1,55 @@
+$purple: #726dcc;
+$white: #fff;
+$lightgrey :#EBEBEB;
+
+.top-action-bar{
+  left: 0;
+  right: 0;
+  top: 0;
+  color: $white;
+  background-color:$purple;
+  z-index: 2;
+  padding: 7px;
+}
+
+.close-btn{
+  flex: 1;
+  .icon{
+    max-width: 35px;
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 6px 7px;
+    img{
+      max-width: 20px;
+      width: 100%;
+    }
+  }
+  .icon:hover{
+    background-color: $white;
+  }
+}
+.store-address{
+  flex: 2;
+}
+.store-address:hover{
+  a{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.init-page-block{
+  width: 100%;
+  max-width: 430px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1000;
+}
+.page{
+  padding: 10px 15px;
+}
+.active{
+  background-color:$lightgrey;
+}

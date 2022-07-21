@@ -1,0 +1,31 @@
+<app-top-action-bar></app-top-action-bar>
+<div class="product-store">
+  <div class="header">
+    <div class="company-info dflex align-center justify-between">
+      <div class="store-image"><img [src]="store_image" alt=""></div>
+      <div class="store-info dflex align-center justify-between">
+        <div class="store-name">
+          <h2>{{store_name}}</h2>
+          <h5>{{store_location}}</h5>
+        </div>
+        <div class="store-filter">
+          <button>i</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-list">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let item of store_product_title">
+        <ng-template carouselSlide class="product-item">
+          <div class="product-item product">
+            <div class="product_image">
+              <img [src]="item.image" alt="">
+            </div>
+<!--            <div class=""><h5>{{item.product_title}}</h5></div>-->
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</div>
