@@ -3,12 +3,11 @@ $white: #fff;
 $lightgrey :#EBEBEB;
 
 .top-action-bar{
-  left: 0;
-  right: 0;
+  position: sticky;
+  z-index: 3;
   top: 0;
   color: $white;
-  background-color:$purple;
-  z-index: 2;
+  background-color: var(--color);
   padding: 7px;
 }
 

@@ -7,6 +7,7 @@ import {PagesModule} from "./pages/pages.module";
 import {AuthPagesModule} from "./auth-pages/auth-pages.module";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     AppRoutingModule,
     SharedModule,
     PagesModule,
-    AuthPagesModule
+    AuthPagesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

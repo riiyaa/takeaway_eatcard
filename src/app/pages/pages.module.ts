@@ -4,7 +4,7 @@ import { PagesComponent } from './pages.component';
 import {RouterModule, Routes} from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import {SharedModule} from "../shared/shared.module";
-import {CarouselModule} from "ngx-owl-carousel-o";
+import {DragScrollModule} from "ngx-drag-scroll";
 
 const routes:Routes = [
   {path:'',component:PagesComponent,children:[
@@ -15,13 +15,13 @@ const routes:Routes = [
 @NgModule({
   declarations: [
     PagesComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     RouterModule.forChild(routes),
-    CarouselModule,
     CommonModule,
     SharedModule,
+    DragScrollModule,
   ]
 })
 export class PagesModule { }

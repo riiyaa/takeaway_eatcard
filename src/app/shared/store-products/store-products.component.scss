@@ -1,0 +1,128 @@
+$lightgrey : #EBEBEB;
+
+.company-info{
+  padding: 20px;
+}
+.store-image{
+  width: 12%;
+}
+.store-info{
+  width: 85%;
+}
+.store-info h2 , .store-info h5{
+  padding: 5px 0;
+}
+.store-filter button {
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: $lightgrey;
+  border: none;
+  border-radius: 50%;
+}
+
+drag-scroll {
+  height: 70px;
+  width: 100%;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  //position: sticky;
+  img{
+    width: 50%;
+  }
+}
+.product-list{
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}
+.product_image{
+  width: 45px;
+  height: auto;
+  border-radius: 5px;
+  img{
+    width: 100%;
+  }
+}
+.product{
+  height: 65px;
+  min-width: 200px;
+  padding: 10px;
+}
+.product_name{
+  padding-left: 5px ;
+}
+.store-products-list{
+  padding: 0 30px;
+}
+.product-title-header{
+  padding: 30px 10px;
+  .product-title-image{
+    width: 65px;
+    height: auto;
+    padding: 5px;
+    img{
+      width: 100%;
+    }
+  }
+  .product-title-name{
+    padding-left: 20px;
+  }
+}
+.items{
+  width: 100%;
+  height: auto;
+  position: relative;
+  border: 1px solid #EBEBEB;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 0 20px;
+  h5{
+    font-weight: 700;
+    margin-bottom:10px ;
+  }
+}
+.item-image{
+  width: 20%;
+  padding: 5px;
+  img{
+    border-radius: 10px;
+    width: 90px;
+    height: 80px;
+  }
+}
+.item-name{
+  width: 70%;
+}
+.item-price{
+  width: 20%;
+  min-width: 107px;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  h5{
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}
+.price{
+  padding: 5px;
+  width: 70%;
+  vertical-align: middle;
+}
+.bag-image{
+  padding: 4px 5px 6px;
+  width: 30%;
+  background-color: #726dcc;
+  border-radius: 0 10px 10px 0;
+  vertical-align: middle;
+  svg{
+    fill: white;
+    width: 60%;
+    vertical-align: middle;
+  }
+}
+.purple{
+  filter: invert(13%) sepia(94%) saturate(7466%) hue-rotate(0deg) brightness(94%) contrast(115%);;
+}

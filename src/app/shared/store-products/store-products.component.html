@@ -1,0 +1,53 @@
+<div class="product-store">
+  <div class="header">
+    <div class="company-info dflex align-center justify-between">
+      <div class="store-image"><img [src]="store_image" alt=""></div>
+      <div class="store-info dflex align-center justify-between">
+        <div class="store-name">
+          <h2>{{store_name}}</h2>
+          <h5>{{store_location}}</h5>
+        </div>
+        <div class="store-filter">
+          <button>i</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-list">
+      <drag-scroll #nav>
+        <div drag-scroll-item *ngFor="let item of store_product_title" class="product-item">
+          <div class="product dflex align-center">
+            <div class="product_image">
+              <img [src]="item.image" alt="">
+            </div>
+            <div class="product_name"><h5>{{item.product_title}}</h5></div>
+          </div>
+        </div>
+      </drag-scroll>
+    </div>
+  <div class="store-products-list">
+    <div *ngFor="let item of store_product_title">
+      <div class="product-title-header dflex align-center">
+        <div class="product-title-image"><img [src]="item.image" alt=""></div>
+        <div class="product-title-name"><h1>{{item.product_title}}</h1></div>
+      </div>
+      <div *ngFor="let data of allData" >
+        <div class="items cursor_pointer dflex align-center" *ngIf="item.id==data.category_id" (click)="showData(data.category_id)">
+          <div class="item-image"><img src="assets/Images/store_image.jpeg" alt=""></div>
+          <div class="item-name">
+            <div><h5>{{data.name}}</h5></div>
+            <div><h6>{{data.description}}</h6></div>
+          </div>
+          <div class="item-price">
+            <div class="price text-center display-inline"><h5>€{{data.price| dutchPrice}}</h5></div>
+            <div class="bag-image text-center display-inline">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.342 21.193">
+                <path id="bag" d="M18.338,20.5,16.727,5.157a.631.631,0,0,0-.627-.565H13.073V3.9a3.9,3.9,0,0,0-7.8,0v.69H2.241a.631.631,0,0,0-.627.565L0,20.5a.631.631,0,0,0,.627.7H17.711a.631.631,0,0,0,.628-.7ZM6.53,3.9a2.641,2.641,0,0,1,5.282,0v.69H6.53ZM1.33,19.931,2.809,5.854H5.268v1.39a.631.631,0,1,0,1.261,0V5.854h5.282v1.39a.631.631,0,1,0,1.261,0V5.854h2.459L17.01,19.931Zm0,0" transform="translate(0.001)"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
