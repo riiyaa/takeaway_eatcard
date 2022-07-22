@@ -10,11 +10,17 @@ import {DragScrollComponent} from "ngx-drag-scroll";
 export class StoreProductsComponent implements OnInit {
 
   constructor(public _service : HelperService) { }
+  selected_id: any
   allData:any
   category_id:any
+  allAllergy:any
   ngOnInit(): void {
       this._service.getUrl.subscribe((data:any)=>{
         this.allData = data
+      })
+      this._service.get_allergyUrl.subscribe((data:any)=>{
+        this.allAllergy = data
+        console.log(this.allAllergy)
       })
   }
   @ViewChild('nav', {read: DragScrollComponent, static: true}) ds: DragScrollComponent | undefined;
@@ -35,7 +41,12 @@ export class StoreProductsComponent implements OnInit {
     { id:10,image:'assets/Images/store_image.jpeg',product_title:'Warme dranken'},
   ]
 
-  showData(category_id: any) {
-
+  showData(data: any) {
+    // console.log(data)
+    console.log(data.sub_category)
+    if(data.allergy){
+    }
+    this.selected_id = data.id
+    // console.log(data.sub_category)
   }
 }

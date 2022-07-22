@@ -8,6 +8,8 @@ export class HelperService {
   constructor( public http :HttpClient) { }
   popup = false
   filter = false
-  url = 'http://localhost:3000/data';
-  getUrl = this.http.get(this.url)
+  productUrl = 'http://localhost:3000/product';
+  allergyUrl = 'http://localhost:3000/allergy'
+  getUrl = this.http.get(this.productUrl);
+  get_allergyUrl = this.http.get(this.allergyUrl)
 }

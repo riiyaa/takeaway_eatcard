@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/css/variable";
 * {
   box-sizing: border-box;
+  scrollbar-width:none;
 }
 
 body {
@@ -16,86 +18,26 @@ body {
   display: table;
 }
 img {
+  width: 100%;
+  height: 100%;
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  border: none;
   vertical-align: middle;
+  object-fit: contain;
 }
 :root{
   --color: #726dcc;
+  --grey:#E0E0E0;
+  --grey1:#EBEBEB;
 }
 .main-container{
   width: 100%;
   height: 100%;
   margin:0 auto;
 }
-.margin-auto {
-  margin:0 auto;
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.capitalize {
-  text-transform: capitalize;
-}
-.text-center {
-  text-align: center;
-}
-.text-right {
-  text-align: right;
-}
-.text-left {
-  text-align: left;
-}
-.fl {
-  float: left;
-}
-.fr {
-  float: right;
-}
 .dflex {
   display: flex;
-}
-.align-center {
-  align-items: center;
-}
-.justify-start {
-  justify-content: flex-start;
-}
-.justify-between {
-  justify-content: space-between;
-}
-.justify-around {
-  justify-content: space-around;
-}
-.overflow-hidden{
-  overflow: hidden;
-}
-.absolute{
-  position: absolute;
-}
-.relative{
-  position: relative;
-}
-.fixed{
-  position: fixed;
-}
-.top-0{
-  top: 0;
-}
-.bottom-0{
-  bottom: 0;
-}
-.left-0{
-  left: 0;
-}
-.right-0{
-  right: 0;
-}
-.absolute{
-  position: absolute;
-}
-.d-none {
-  display: none;
 }
 .display-inline{
   display: inline-block;
@@ -142,4 +84,7 @@ h1,h2,h3,h4,h5,h6,a,p{
 }
 button,.cursor_pointer{
   cursor: pointer;
+}
+.br-none{
+  border:none;
 }

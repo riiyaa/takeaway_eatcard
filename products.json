@@ -1,5 +1,5 @@
 {
-  "data": [
+  "product": [
     {
       "id": 3,
       "store_id": 1,
@@ -30144,6 +30144,515 @@
           "allergy_level": 1,
           "created_at": "2022-06-13T08:58:58.000000Z",
           "updated_at": "2022-06-13T08:58:58.000000Z"
+        }
+      ]
+    }
+  ],
+  "allergy": [
+    {
+      "id": 1,
+      "title": "Bevat ei of mayonaise",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Contains-egg-or-mayonnaise.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207532,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Bevat ei of mayonaise",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 1,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207533,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Contains egg or mayonnaise",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 1,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207534,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "含鸡蛋或蛋黄酱",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 1,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Niet geschikt tijdens zwangerschap",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Not-suitable-during-pregnancy.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207535,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Niet geschikt tijdens zwangerschap",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 2,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207536,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Not suitable during pregnancy",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 2,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207537,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "不建议孕妇食用",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 2,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Vegetarisch",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Vegetarian.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207538,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Vegetarisch",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 3,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207539,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Vegetarian",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 3,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207540,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "素食",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 3,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Bevat pinda",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Contains-peanuts.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207541,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Bevat pinda",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 4,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207542,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Contains peanuts",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 4,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207543,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "含花生",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 4,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Bevat vis",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Contains-fish.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207544,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Bevat vis",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 5,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207545,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Contains fish",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 5,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207546,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "含鱼",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 5,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Bevat sporen van gluten",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Contains-traces-of-gluten.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207547,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Bevat sporen van gluten",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 6,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207548,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Contains traces of gluten",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 6,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207549,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "含麸质",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 6,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Bevat schaaldieren",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Contains-shellfish.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207550,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Bevat schaaldieren",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 7,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207551,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Contains shellfish",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 7,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207552,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "含贝类",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 7,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Bevat lactose",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Contains-lactose.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207556,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Bevat lactose",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 9,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207557,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Contains lactose",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 9,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207558,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "含乳糖",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 9,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Bevat noten",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Contains-nuts.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207559,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Bevat noten",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 10,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207560,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Contains nuts",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 10,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207561,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "含坚果",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 10,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Bevat sesam",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Contains-sesame.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207568,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Bevat sesam",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 13,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207569,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Contains sesame",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 13,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207570,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "含芝麻或芝麻油",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 13,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Bevat soja",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Contains-soya.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207571,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Bevat soja",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 14,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207572,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Contains soya",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 14,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207573,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "含大豆",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 14,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Pittig",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Spicy.svg",
+      "secondary_image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/to-spicy.svg",
+      "translates": [
+        {
+          "id": 207580,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Pittig",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 17,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207581,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Spicy",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 17,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207582,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "辣",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 17,
+          "created_at": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Halal",
+      "is_active": 1,
+      "image": "https://eatcard.s3.eu-central-1.amazonaws.com/assets/allergy_icons/Halal.svg",
+      "secondary_image": null,
+      "translates": [
+        {
+          "id": 207583,
+          "field_name": "name",
+          "locale": "nl",
+          "text": "Halal",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 18,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207584,
+          "field_name": "name",
+          "locale": "en",
+          "text": "Halal",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 18,
+          "created_at": null,
+          "updated_at": null
+        },
+        {
+          "id": 207585,
+          "field_name": "name",
+          "locale": "zh",
+          "text": "清真",
+          "translatable_type": "App\\Models\\DynamicAllergy",
+          "translatable_id": 18,
+          "created_at": null,
+          "updated_at": null
         }
       ]
     }
