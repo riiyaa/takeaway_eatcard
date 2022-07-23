@@ -7,6 +7,7 @@ import { StoreProductsComponent } from './store-products/store-products.componen
 import { OrderProductsComponent } from './order-products/order-products.component';
 import {DragScrollModule} from "ngx-drag-scroll";
 import {PipesModule} from "../core/pipes/pipes.module";
+import { FilterPopupComponent } from './filter-popup/filter-popup.component';
 
 
 
@@ -14,7 +15,8 @@ import {PipesModule} from "../core/pipes/pipes.module";
     declarations: [
         TopActionBarComponent,
         StoreProductsComponent,
-        OrderProductsComponent
+        OrderProductsComponent,
+        FilterPopupComponent
     ],
   exports: [
     TopActionBarComponent,

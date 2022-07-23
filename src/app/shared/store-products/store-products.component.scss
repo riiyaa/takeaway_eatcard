@@ -58,7 +58,7 @@ drag-scroll {
 .item-image{
   img{
     border-radius: 10px;
-    width: 90px;
+    width: 80px;
     height: 80px;
   }
 }
@@ -76,7 +76,7 @@ drag-scroll {
   border-radius: 0 10px 10px 0;
    svg{
     fill: white;
-     width: 45%;
+     width: 50%;
     vertical-align: middle;
   }
 }
@@ -87,21 +87,21 @@ drag-scroll {
   display: none;
 }
 .discount-price{
-  left: 10%;
+  right: 11%;
   text-decoration: line-through;
 }
 .allergy-image{
-  top: -40px;
-  right: -20px;
+  top: 0;
+  right: 0;
   width: fit-content;
   border-left: 1px solid var(--grey);
   border-bottom: 1px solid var(--grey);
-  border-radius: 10px;
-  .allergy-image .data-image img{
-    width: 20%;
-  }
-  .show-image{
-    width: 60%;
+  padding: 3px;
+  border-radius: 0 0 0 8px;
+  height: 25px;
+   img{
+    width: fit-content;
+     padding: 0 2px;
   }
 }
 .select-size{
@@ -109,7 +109,7 @@ drag-scroll {
   margin: 0 auto 20px;
    select{
      width: 100%;
-     padding: 10px;
+     padding: 6px 8px;
      border-radius: 8px;
      border-color: #B4B4B4;
      background: #FFFFFF;
@@ -124,4 +124,15 @@ drag-scroll {
   top: 0;
   width: 19px;
   height: 19px;
+}
+.dark{
+  font-weight: 600;
+}
+.bottom-price .item-price{
+  height: 35px;
+}
+.bottom-price .bag-image{
+  svg{
+    width: 6.5%;
+  }
 }

@@ -20,7 +20,7 @@ export class StoreProductsComponent implements OnInit {
       })
       this._service.get_allergyUrl.subscribe((data:any)=>{
         this.allAllergy = data
-        console.log(this.allAllergy)
+        // console.log(this.allAllergy)
       })
   }
   @ViewChild('nav', {read: DragScrollComponent, static: true}) ds: DragScrollComponent | undefined;

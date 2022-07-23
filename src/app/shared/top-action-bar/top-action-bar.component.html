@@ -1,20 +1,36 @@
-<div class="top-action-bar dflex align-center">
+<div>
+  <div class="top-action-bar dflex align-center">
     <div class="close-btn">
       <div class="icon"><img src="assets/Images/icons8-close.svg" alt=""></div>
     </div>
     <div class="store-address" (click)="_service.popup = true">
       <div><a>{{store_name}}</a></div>
     </div>
-</div>
+  </div>
 
-<div class="init-page-block margin-auto relative overflow-hidden" *ngIf="_service.popup">
-    <div class="box-wrap clearfix">
-      <div class="deliver fl w50 page"><h2>Deliver</h2></div>
-      <div class="takeoff fl w50 page active"><h2>To take off</h2></div>
+  <div class="init-page-block margin-auto absolute overflow-hidden" *ngIf="_service.popup">
+    <div class="box-wrap dflex w100">
+      <div class="deliver w50 py10 px15"><h2>Deliver</h2></div>
+      <div class="takeoff w50 py10 px15 active relative hover" (click)="_service.allergy_popup = true"><h2 >To take off</h2></div>
     </div>
-    <div class="box-wrap-block">
-      <div></div>
+    <div class="p20 pb40">
+      <div class="deliver-input">
+        <label ><h6 class="mb10">Your address</h6></label>
+        <input type="text" placeholder="Postal code, eg 5222AV">
+        <div class="relative">
+          <svg class=" absolute" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+              <path d="M256,0C149.3,0,64,85.3,64,192c0,36.9,11,65.4,30.1,94.3l141.7,215v0c4.3,6.5,11.7,10.7,20.2,10.7c8.5,0,16-4.3,20.2-10.7
+              l141.7-215C437,257.4,448,228.9,448,192C448,85.3,362.7,0,256,0z M256,298.6c-58.9,0-106.7-47.8-106.7-106.8
+              c0-59,47.8-106.8,106.7-106.8c58.9,0,106.7,47.8,106.7,106.8C362.7,250.8,314.9,298.6,256,298.6z"/>
+          </svg>
+        </div>
+      </div>
     </div>
+  </div>
+  <div *ngIf="_service.allergy_popup">
+      <app-filter-popup></app-filter-popup>
+  </div>
 </div>
 
 

@@ -28,27 +28,29 @@
   <div class="store-products-list px30">
     <div *ngFor="let item of store_product_title">
       <div class="product-title-header dflex align-center py30 px10">
-        {{item.id}}
+<!--        {{item.id}}-->
         <div class="product-title-image p5"><img [src]="item.image" alt=""></div>
         <div class="product-title-name pl20"><h1>{{item.product_title}}</h1></div>
       </div>
-      <div *ngFor="let data of allData; let cat_index=index" >
+      <div *ngFor="let data of allData; let cat_index=index" class="relative">
+
         <div [id]="data.id" class="items cursor_pointer dflex align-center w100 mb10" *ngIf="item.id==data.category_id" (click)="showData(data)">
           <div class="item-image w20 p5">
-            {{data.id}}<img src="assets/Images/store_image.jpeg" alt=""></div>
+<!--            {{data.id}}-->
+            <img src="assets/Images/store_image.jpeg" alt="">
+          </div>
           <div class="item-name w70">
             <div><h5 class="mb10">{{data.name}}</h5></div>
             <div><h6>{{data.description}}</h6></div>
           </div>
-          <div class="item-price w20 relative display-inline">
-            <div class="absolute allergy-image" *ngFor="let allergy of data.allergy; let allergy_index = index">
-              <div *ngFor="let data of allAllergy" class="data-image">
-                <div *ngIf="allergy.status == 1 && allergy.allergy_id == data.id" class="show-image">
-                  <img [src]="data.image" alt="">
-                </div>
-              </div>
-
-            </div>
+          <div class="absolute allergy-image dflex justify-around">
+            <ng-container *ngFor="let allergy of data.allergy; let allergy_index = index">
+              <ng-container *ngFor="let data of allAllergy">
+                  <img *ngIf="allergy.status == 1 && allergy.allergy_id == data.id" [src]="data.image" alt="">
+              </ng-container>
+            </ng-container>
+          </div>
+          <div class="item-price w20 display-inline" *ngIf="selected_id != data.id">
             <div class="price text-center display-inline p5 w70 vertical-middle" *ngIf="data.discount_price != null"><h5>€{{data.discount_price| dutchPrice}}</h5></div>
             <div class="price text-center display-inline p5 w70 vertical-middle" *ngIf="data.discount_price == null"><h5>€{{data.price| dutchPrice}}</h5></div>
             <div class="bag-image text-center display-inline w30 pt4 pb6 py5 vertical-middle">
@@ -86,11 +88,24 @@
                       <option *ngFor="let cart of filter.products">{{cart.name}}</option>
                     </select>
                   </div>
-                  <div *ngIf="filter.id == 1" class="select-size">
+                  <div *ngIf="filter.id != 52" class="select-size">
+                    <label><h6 class="dark">{{filter.name}}:</h6></label>
                     <div *ngFor="let cart of filter.products">
                       <input type="checkbox" [value]="cart.name"><label class="display-inline"><h6>{{cart.name}}</h6></label>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="margin-auto w70 bottom-price">
+                <div class="item-price" [ngClass]="{'relative display-inline':selected_id == data.id}">
+                  <div class="price text-center display-inline p5 w20 vertical-middle" *ngIf="data.discount_price != null"><h5>€{{data.discount_price| dutchPrice}}</h5></div>
+                  <div class="price text-center display-inline p5 w20 vertical-middle" *ngIf="data.discount_price == null"><h5>€{{data.price| dutchPrice}}</h5></div>
+                  <div class="bag-image text-center display-inline w80 pt4 pb6 py5 vertical-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.342 21.193">
+                      <path id="bag" d="M18.338,20.5,16.727,5.157a.631.631,0,0,0-.627-.565H13.073V3.9a3.9,3.9,0,0,0-7.8,0v.69H2.241a.631.631,0,0,0-.627.565L0,20.5a.631.631,0,0,0,.627.7H17.711a.631.631,0,0,0,.628-.7ZM6.53,3.9a2.641,2.641,0,0,1,5.282,0v.69H6.53ZM1.33,19.931,2.809,5.854H5.268v1.39a.631.631,0,1,0,1.261,0V5.854h5.282v1.39a.631.631,0,1,0,1.261,0V5.854h2.459L17.01,19.931Zm0,0" transform="translate(0.001)"/>
+                    </svg>
+                  </div>
+<!--                  <div class="discount-price text-center absolute p5 fontDarkGray" *ngIf="data.discount_price != null"><h5>€{{data.price| dutchPrice}}</h5></div>-->
                 </div>
               </div>
             </div>

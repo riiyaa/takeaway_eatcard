@@ -1,0 +1,33 @@
+<div class="init-page-block margin-auto absolute overflow-hidden">
+  <div class="scrollbar">
+    <drag-scroll #filters>
+      <div drag-scroll-item class="drag-item cursor_pointer py10 px20 mr10" (click)="moveTo(0)"><h6>announcement</h6></div>
+      <div drag-scroll-item class="drag-item cursor_pointer px20 py10 mr10" (click)="moveTo(1)"><h6>reviews</h6></div>
+      <div drag-scroll-item class="drag-item cursor_pointer px20 py10 mr10" (click)="moveTo(2)" ><h6>Allergens</h6></div>
+      <div drag-scroll-item class="drag-item cursor_pointer px20 py10 mr10" (click)="moveTo(3)"><h6>store info</h6></div>
+    </drag-scroll>
+  </div>
+  <div class="content py50 px20" *ngIf="showContent == 0">
+      <div><h6><b>Hello0</b></h6></div>
+  </div>
+  <div class="content py50 px20" *ngIf="showContent == 1">
+    <div><h6><b>Hello1</b></h6></div>
+  </div>
+  <div class="content py50 px20" *ngIf="showContent == 2">
+    <div *ngFor="let items of allAllergy">
+      <div class="p10 dflex align-center justify-between show-items">
+        <div class="w10"><img [src]="items.image" alt=""></div>
+        <div class="w85 dflex justify-between align-center" (click)="show(active.value)">
+          <h6>{{items.title}}</h6>
+          <div class="w20"><label class="switch">
+            <input type="checkbox" #active>
+            <span class="slider round"></span>
+          </label></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content py50 px20" *ngIf="showContent == 3">
+    <div><h6><b>Hello3</b></h6></div>
+  </div>
+</div>

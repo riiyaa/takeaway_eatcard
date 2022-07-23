@@ -6,6 +6,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class HelperService {
   constructor( public http :HttpClient) { }
+  allergy_popup = false
   popup = false
   filter = false
   productUrl = 'http://localhost:3000/product';
