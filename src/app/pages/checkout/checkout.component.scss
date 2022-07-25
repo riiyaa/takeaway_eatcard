@@ -1,0 +1,114 @@
+.step-2-header{
+  z-index: 10000;
+  background-color: white;
+}
+.back-icon svg{
+  width: 20px;
+  height: 25px;
+  padding: 5px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+}
+.back-icon{
+  background-color: var(--grey1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.heading h5{
+  font-weight: 700;
+}
+.cart-items{
+  height: auto;
+  border: 1px solid var(--grey1);
+  border-radius: 10px;
+}
+.cart-items-image img{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: none;
+}
+.comment input{
+  width: 70%;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--grey1);
+}
+.comment ::placeholder{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  color: #c4c2c2;
+}
+.count-items{
+  border: 1px solid #E8E8E8;
+  padding: 5px;
+  border-radius: 10px;
+}
+.cart-items-values{
+  width: 100px;
+}
+.item-price{
+  background-color: #ebebeb;
+  border-radius: 0 8px 0 0;
+}
+h4{
+  font-weight: 700;
+  line-height: 21px;
+}
+input,select,textarea{
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--grey1);
+}
+::placeholder{
+  font-family: 'Work Sans', sans-serif;
+  color: #c4c2c2
+}
+.star{
+  color: red;
+  top: 25%;
+  right: 3%;
+  font-size: 20px;
+}
+.order-btn{
+  background-color: var(--grey);
+  border-radius: 10px;
+  width: 45%;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+.order-btn:target,.order-btn:hover,.order-btn:active,.order-btn:after,.gift-details button:hover{
+  background-color: var(--color);
+  color: white;
+}
+.order-btn.hover:after,.gift-details .hover:after{
+  color: white;
+  background-color: white;
+}
+.order-details .details select{
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 19px;
+  font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+.gift-details button{
+  background-color: var(--grey);
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 19px;
+  font-weight: 700;
+}
+.gift-details .details button{
+  background-color: var(--color);
+}

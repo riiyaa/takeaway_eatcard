@@ -42,21 +42,13 @@ h2{
 .active{
   background-color:$lightgrey;
 }
-input[type='text']{
-  width: 100%;
-  height: 50px;
-  background-color: #EBEBEB;
-  padding: 17px 0 17px 50px;
-  border: none;
-  border-radius: 10px;
-  display: block;
-}
-::placeholder{
-  font-size: 1.125rem;
-}
+
 svg{
   width: 6%;
   top: -40px;
   left: 10px;
   fill: #c1c1c1;
+}
+.deliver-input input{
+  padding: 17px 0 17px 50px;
 }

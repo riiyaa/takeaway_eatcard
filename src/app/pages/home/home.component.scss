@@ -8,3 +8,147 @@
 .show-all{
   padding: 20px;
 }
+.store-image{
+  width: 12%;
+}
+.store-info h2 , .store-info h5{
+  padding: 5px 0;
+}
+.store-filter button {
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: var(--grey1);
+}
+drag-scroll {
+  height: 70px;
+  width: 100%;
+  border-top: 1px solid var(--grey1);
+  border-bottom: 1px solid var(--grey1);
+  img{
+    width: 50%;
+  }
+}
+.product-list{
+  position: sticky;
+  z-index: 2;
+}
+.product_image{
+  width: 45px;
+  height: auto;
+  border-radius: 5px;
+  img{
+    width: 100%;
+  }
+}
+.product{
+  height: 65px;
+  min-width: 200px;
+}
+.product-title-header{
+  .product-title-image{
+    width: 65px;
+    height: auto;
+    img{
+      width: 100%;
+    }
+  }
+}
+.items{
+  height: auto;
+  border: 1px solid var(--grey1);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 0 20px;
+  .item-name h5{
+    font-weight: 700;
+  }
+}
+.item-image{
+  img{
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.item-price{
+  min-width: 107px;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  h5{
+    font-weight: 400;
+  }
+}
+.bag-image{
+  background-color: var(--color);
+  border-radius: 0 10px 10px 0;
+  svg{
+    fill: white;
+    width: 50%;
+    vertical-align: middle;
+  }
+}
+.discount-price{
+  right: 13%;
+  text-decoration: line-through;
+}
+.allergy-image{
+  top: 0;
+  right: 0;
+  width: fit-content;
+  border-left: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  padding: 3px;
+  border-radius: 0 0 0 8px;
+  height: 25px;
+  img{
+    width: fit-content;
+    padding: 0 2px;
+  }
+}
+.select-size{
+  width: 70%;
+  margin: 0 auto 20px;
+  select{
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border-color: #B4B4B4;
+    background: #FFFFFF;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+  }
+}
+[type="checkbox"]:not(:checked) + label:before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 19px;
+  height: 19px;
+}
+.dark{
+  font-weight: 600;
+}
+.bottom-price .item-price{
+  height: 31px;
+}
+.bottom-price .bag-image{
+  svg{
+    width: 6.5%;
+  }
+}
+.checkout-btn{
+  background-color: var(--color);
+  border: none;
+  font-size: 1rem;
+  line-height: 19px;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+}
+.hover:after{
+  background-color: white;
+}

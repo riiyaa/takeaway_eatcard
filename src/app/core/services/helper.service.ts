@@ -9,7 +9,7 @@ export class HelperService {
   allergy_popup = false
   popup = false
   filter = false
-  productUrl = 'http://localhost:3000/product';
+  productUrl = 'http://192.168.1.34:7777/api/get-normal-products/1';
   allergyUrl = 'http://localhost:3000/allergy'
   getUrl = this.http.get(this.productUrl);
   get_allergyUrl = this.http.get(this.allergyUrl)

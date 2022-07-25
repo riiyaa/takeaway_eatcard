@@ -19,8 +19,8 @@ drag-scroll {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 80%;
+  height: 22px;
 }
 
 .switch input {
@@ -44,10 +44,10 @@ drag-scroll {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -74,4 +74,19 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+.icon{
+  background-color: var(--grey1);
+  top: 10%;
+  right: 10px;
+  height: 33px;
+  border-radius: 50%;
+}
+.icon svg{
+  width: 30%;
+  top: 28%;
+  right: 32%;
+}
+.close{
+  background-color: white;
 }

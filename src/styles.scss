@@ -29,7 +29,7 @@ img {
 :root{
   --color: #726dcc;
   --grey:#E0E0E0;
-  --grey1:#EBEBEB;
+  --grey1: #EBEBEB;
 }
 .main-container{
   width: 100%;
@@ -114,4 +114,18 @@ button,.cursor_pointer{
   z-index: 1000;
   transform: translate(-50%,-50%);
   box-shadow: 0 0 0 1920px rgba(0,0,0,0.6);
+}
+input,select,textarea{
+  width: 100%;
+  background-color: #EBEBEB;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+textarea{
+  resize: none;
+}
+::placeholder{
+  font-size: 1.125rem;
 }
